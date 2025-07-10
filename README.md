@@ -1,68 +1,38 @@
-# AI Card Creator - Anki Addon
+# AI Card Creator - Anki Addon for Japanese Vocabulary
 
-An Anki addon that generates flashcards using AI (Gemini 2.5 Flash via OpenRouter API). Optimized for Japanese vocabulary learning with Korean UI.
+A powerful Anki addon that automatically generates comprehensive Japanese vocabulary cards using AI (OpenRouter/Gemini).
 
 ## Features
 
-- 🤖 AI-powered card generation using Gemini 2.5 Flash
-- 🇯🇵 Optimized for Japanese vocabulary learning
-- 📝 Process multiple words at once (supports various delimiters)
-- ⚡ Background processing keeps UI responsive
-- 🎯 Automatic field mapping for different note types
-- 🔧 Configurable prompt templates
+- 🤖 **AI-Powered Card Generation**: Automatically fills all card fields with a single API call
+- 📚 **Bulk Processing**: Handle multiple words at once with various delimiters
+- 💡 **Smart Examples**: Natural conversation examples with context explanations
+- 🎨 **Korean Interface**: Fully localized Korean UI for Korean learners
+- 🔄 **Automatic Refresh**: Real-time deck and note type updates
 
-## Installation
+## Quick Start
 
-1. Download the addon files
-2. Place in Anki's addon folder: `Anki2/addons21/ai-card-creator/`
-3. Restart Anki
+1. Install the addon in Anki
+2. Get an OpenRouter API key from [OpenRouter](https://openrouter.ai)
+3. Configure the API key in Tools → AI Card Creator Settings
+4. Use Tools → AI Card Creator to generate cards
 
-## Setup
+## Detailed Documentation
 
-1. Get an API key from [OpenRouter](https://openrouter.ai)
-2. In Anki: Tools → AI Card Creator Settings
-3. Enter your API key
-4. Configure default deck and note type
-
-## Usage
-
-1. Tools → AI Card Creator
-2. Enter Japanese words (one or multiple)
-3. Click "카드 생성" (Create Card)
-4. Cards are automatically created with all fields filled
-
-### Supported Delimiters
-- Newline (Enter)
-- Comma (,)
-- Space
-- Middle dot (・)
-
-## Note Type Fields
-
-For Japanese (일본어) note type:
-- 단어 (Word)
-- 요미가나 (Reading)
-- 의미 (Meaning)
-- 영어 (English)
-- 예문 (Examples)
-- 한자 (Kanji)
-- 메모 (Notes)
-- 품사 (Part of Speech)
+For comprehensive installation and usage instructions in Korean, see [일어주세요.md](./일어주세요.md).
 
 ## Requirements
 
-- Anki 23.10 or higher
-- Python `requests` library
+- Anki 23.10+
 - OpenRouter API key
-
-## Configuration
-
-Settings are stored in `config.json`:
-- API credentials
-- Default deck and note type
-- Prompt template
-- Field mappings
+- Internet connection
 
 ## License
 
-MIT License
+MIT License - see LICENSE file for details.
+
+## Support
+
+For Korean users, please refer to the detailed Korean documentation in [일어주세요.md](./일어주세요.md).
+
+For issues and feature requests, please use the GitHub Issues tab.
