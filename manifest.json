@@ -1,0 +1,11 @@
+{
+    "package": "ai-card-creator",
+    "name": "AI Card Creator",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "homepage": "https://github.com/yourusername/ai-card-creator",
+    "conflicts": [],
+    "mod": 1736419200,
+    "min_anki_version": "23.10",
+    "description": "Generate Anki cards with AI-filled fields for Japanese vocabulary using OpenRouter API"
+}
