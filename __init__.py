@@ -93,7 +93,7 @@ def initialize():
             def show_settings(self):
                 self.config.show_settings_dialog()
                 # Refresh the window lists if it's open
-                if self.window:
+                if self.window and hasattr(self.window, 'refresh_lists'):
                     self.window.refresh_lists()
         
         ai_card_creator = AICardCreator()

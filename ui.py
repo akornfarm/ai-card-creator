@@ -289,6 +289,11 @@ class AICardCreatorWindow(QDialog):
         if current_note_type in note_types:
             self.note_type_combo.setCurrentText(current_note_type)
             
+    def refresh_lists(self):
+        """Refresh deck and note type lists"""
+        self.refresh_decks()
+        self.refresh_note_types()
+        
     def clear_results(self):
         self.results_text.clear()
         
