@@ -65,6 +65,11 @@ Lists from AI are formatted with bullet points to avoid bracket display issues.
 2. Modify prompt template in `config.json`
 3. Handle list formatting if field can have multiple values
 
+### UI Refresh Patterns
+- Deck/note type dropdowns auto-refresh on window focus (`showEvent`)
+- Manual refresh button available for user control
+- Use `self.sender()` to detect manual vs automatic calls
+
 ## Key Constraints
 
 - Minimum Anki version: 23.10
