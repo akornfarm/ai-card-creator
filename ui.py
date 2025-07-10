@@ -93,6 +93,11 @@ class AICardCreatorWindow(QDialog):
         # Buttons
         button_layout = QHBoxLayout()
         
+        refresh_button = QPushButton("새로고침")
+        refresh_button.clicked.connect(self.refresh_lists)
+        refresh_button.setToolTip("덱과 노트 타입 목록을 새로고침합니다")
+        button_layout.addWidget(refresh_button)
+        
         clear_button = QPushButton("결과 지우기")
         clear_button.clicked.connect(self.clear_results)
         button_layout.addWidget(clear_button)
@@ -293,6 +298,9 @@ class AICardCreatorWindow(QDialog):
         """Refresh deck and note type lists"""
         self.refresh_decks()
         self.refresh_note_types()
+        # Show tooltip only if called manually (not during showEvent)
+        if self.sender() and hasattr(self.sender(), 'text'):
+            tooltip("목록이 새로고침되었습니다")
         
     def clear_results(self):
         self.results_text.clear()
@@ -300,6 +308,12 @@ class AICardCreatorWindow(QDialog):
     def load_position(self):
         pos = self.config.get("window_position", {"x": 100, "y": 100})
         self.move(pos["x"], pos["y"])
+        
+    def showEvent(self, event):
+        """Refresh lists when window is shown"""
+        super().showEvent(event)
+        # Refresh deck and note type lists in case they changed
+        self.refresh_lists()
         
     def closeEvent(self, event):
         # Save window position
