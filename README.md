@@ -13,9 +13,10 @@ A powerful Anki addon that automatically generates comprehensive Japanese vocabu
 ## Quick Start
 
 1. Install the addon in Anki
-2. Get an OpenRouter API key from [OpenRouter](https://openrouter.ai)
-3. Configure the API key in Tools → AI Card Creator Settings
-4. Use Tools → AI Card Creator to generate cards
+2. Import the included `Test.apkg` sample deck (double-click or File → Import)
+3. Get an OpenRouter API key from [OpenRouter](https://openrouter.ai)
+4. Configure the API key in Tools → AI Card Creator Settings
+5. Use Tools → AI Card Creator to generate cards
 
 ## Detailed Documentation
 

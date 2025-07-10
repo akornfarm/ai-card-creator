@@ -206,7 +206,7 @@ class AICardCreatorWindow(QDialog):
                         detailed_results.append((word, False, message, None))
                 else:
                     fail_count += 1
-                    detailed_results.append((word, False, "No data generated", None))
+                    detailed_results.append((word, False, "AI가 올바른 형식의 응답을 생성하지 못했습니다", None))
             
             # Update UI
             self._on_cards_created(len(results), success_count, duplicate_count, fail_count, detailed_results)

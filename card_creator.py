@@ -12,6 +12,10 @@ class CardCreator:
         Returns tuple: (success: bool, message: str)
         """
         try:
+            # Validate fields_data type
+            if not isinstance(fields_data, dict):
+                return False, f"Invalid AI response format: expected dict, got {type(fields_data).__name__}"
+            
             # Get the configured deck and note type
             deck_name = self.config.get("default_deck", "단어")
             note_type_name = self.config.get("default_note_type", "일본어")
