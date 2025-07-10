@@ -19,7 +19,7 @@ A powerful Anki addon that automatically generates comprehensive Japanese vocabu
 
 ## Detailed Documentation
 
-For comprehensive installation and usage instructions in Korean, see [일어주세요.md](./일어주세요.md).
+For comprehensive installation and usage instructions in Korean, see [읽어주세요.md](./읽어주세요.md).
 
 ## Requirements
 
@@ -33,6 +33,6 @@ MIT License - see LICENSE file for details.
 
 ## Support
 
-For Korean users, please refer to the detailed Korean documentation in [일어주세요.md](./일어주세요.md).
+For Korean users, please refer to the detailed Korean documentation in [읽어주세요.md](./읽어주세요.md).
 
 For issues and feature requests, please use the GitHub Issues tab.
