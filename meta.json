@@ -1,8 +1,0 @@
-{
-    "name": "AI Card Creator",
-    "config": {
-        "api_key": "",
-        "api_base_url": "https://openrouter.ai/api/v1",
-        "model": "google/gemini-2.5-flash"
-    }
-}
